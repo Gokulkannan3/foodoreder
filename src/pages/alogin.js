@@ -20,7 +20,7 @@ export default function Alogin() {
     console.log({ name, password });
 
     try {
-        const response = await axios.post('http://localhost:3002/alogin', {
+        const response = await axios.post('https://fbackend-6fbo.onrender.com/alogin', {
             name: name,
             password: password,
         });
