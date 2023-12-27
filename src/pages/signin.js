@@ -30,7 +30,7 @@ export default function Signin() {
       setPasswordMatch(false);
       return;
     }
-    Axios.post(`http://localhost:3002/register`, {
+    Axios.post(`https://fbackend-6fbo.onrender.com/register`, {
       firstname: firstname,
       lastname: lastname,
       contact: contact,
