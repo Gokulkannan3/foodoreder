@@ -34,7 +34,7 @@ export default function Menu() {
     e.preventDefault();
   
     try {
-      const response = await axios.post('http://localhost:3002/order', {
+      const response = await axios.post('https://fbackend-6fbo.onrender.com/order', {
         user: user,
         address: address,
         coffee: cartCounts[0],
