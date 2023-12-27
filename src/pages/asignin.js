@@ -23,7 +23,7 @@ export default function Asignin() {
       setPasswordMatch(false);
       return;
     }
-    Axios.post(`http://localhost:3002/aregister`, {
+    Axios.post(`https://fbackend-6fbo.onrender.com/aregister`, {
       name: name,
       password:password,
       cpassword:cpassword,
