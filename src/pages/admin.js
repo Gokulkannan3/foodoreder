@@ -7,7 +7,7 @@ export default function Admin() {
   const [order,setOrder] =useState([]);
 
   const getOrder = () => {
-    Axios.get(`http://localhost:3002/order`)
+    Axios.get(`https://fbackend-6fbo.onrender.com/order`)
       .then((response) => {
         setOrder(response.data);
       })
@@ -20,7 +20,7 @@ const updateStatus = (id) => {
     const orderIndex = order.findIndex((o) => o.id === id);
 
     if (orderIndex !== -1) {
-        Axios.put(`http://localhost:3002/updateStatus/${id}`, {
+        Axios.put(`https://fbackend-6fbo.onrender.com/updateStatus/${id}`, {
             newStatus: statusCycle[(statusCycle.indexOf(order[orderIndex].status) + 1) % statusCycle.length],
         })
         .then((response) => {
