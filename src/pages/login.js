@@ -21,7 +21,7 @@ export default function Login() {
     console.log({ username, password });
 
     try {
-        const response = await axios.post('http://localhost:3002/login', {
+        const response = await axios.post('https://fbackend-6fbo.onrender.com/login', {
             username: username,
             password: password,
         });
