@@ -1,0 +1,12 @@
+@media screen and (min-device-width:350px) and (max-device-width:800px){
+    img{
+        width:65px !important;
+    }
+    .head{
+        font-size:15px !important;
+        transform:translate(95px,-50px);
+    }
+    .out{
+        height:95px
+    }
+}
