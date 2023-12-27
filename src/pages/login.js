@@ -52,7 +52,7 @@ export default function Login() {
                                     type='email'
                                     onChange={(e) => setUsername(e.target.value)}
                                     className='bg-red-500 h-10 w-64 font-bold text-white text-center rounded-md'
-                                    placeholder='mail id'
+                                    placeholder='Username'
                                 ></input>
 
                                 <p className='text-white text-2xl mt-6 mb-2'>Enter Password</p>
