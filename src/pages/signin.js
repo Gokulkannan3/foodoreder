@@ -140,7 +140,7 @@ export default function Signin() {
               <input type={showPassword ? 'text' : 'password'} onChange={(e) => setPassword(e.target.value)} autocomplete="email" maxLength={9} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
               <button
                 type="button"
-                className="ml-2 focus:outline-none"
+                className="-translate-y-8 translate-x-32 focus:outline-none"
                 onClick={handleTogglePasswordVisibility}
               >
                 {showConfirmPassword ? 'Hide' : 'Show'}
@@ -153,7 +153,7 @@ export default function Signin() {
               <input type={showConfirmPassword ? 'text' : 'password'} onChange={(e) => setCpassword(e.target.value)} autocomplete="email" maxLength={9} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
               <button
                 type="button"
-                className="ml-2 focus:outline-none"
+                className="-translate-y-8 translate-x-32 focus:outline-none"
                 onClick={handleToggleConfirmPasswordVisibility}
               >
                 {showConfirmPassword ? 'Hide' : 'Show'}
@@ -186,7 +186,7 @@ export default function Signin() {
             
           </div>
           <Link to='/login'>
-            <button onClick={closeModal} className=' bg-red-500 w-16 h-16 -translate-y-56 text-white rounded-full font-black'>
+            <button onClick={closeModal} className='close bg-red-500 w-16 h-16 -translate-y-56 text-white rounded-full font-black'>
                 X
             </button>
           </Link>
