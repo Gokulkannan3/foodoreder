@@ -6,6 +6,7 @@ import Modal from 'react-modal';
 import Lottie from 'lottie-react';
 import Animation from './animation.json'
 import { Link } from 'react-router-dom';
+import './signin.css';
 
 export default function Signin() {
 
