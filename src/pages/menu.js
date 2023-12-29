@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import Navi from '../components/anav';
+import Navi from '../components/navi';
 import cc from '../images/cc.png';
 import plus from '../images/plus.png';
 import minus from '../images/minus.png';
