@@ -135,13 +135,13 @@ export default function Signin() {
             </div>
           </div>
         </div>
-        <div class="sm:col-span-4">
+       <div class="sm:col-span-4">
             <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
             <div class="mt-2">
               <input type={showPassword ? 'text' : 'password'} onChange={(e) => setPassword(e.target.value)} autocomplete="email" maxLength={9} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
               <button
                 type="button"
-                className="-translate-y-8 translate-x-32 focus:outline-none"
+                className="ml-2 focus:outline-none"
                 onClick={handleTogglePasswordVisibility}
               >
                 {showConfirmPassword ? 'Hide' : 'Show'}
@@ -154,7 +154,7 @@ export default function Signin() {
               <input type={showConfirmPassword ? 'text' : 'password'} onChange={(e) => setCpassword(e.target.value)} autocomplete="email" maxLength={9} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
               <button
                 type="button"
-                className="-translate-y-8 translate-x-32 focus:outline-none"
+                className="ml-2 focus:outline-none"
                 onClick={handleToggleConfirmPasswordVisibility}
               >
                 {showConfirmPassword ? 'Hide' : 'Show'}
@@ -174,7 +174,7 @@ export default function Signin() {
           isOpen={modalIsOpen}
           contentLabel="Registration Success Modal"
           ariaHideApp={false}
-          className='modal flex justify-center items-center content-center h-screen w-screen fixed top-0 left-0'
+          className='flex justify-center items-center content-center h-screen w-screen fixed top-0 left-0'
           overlayClassName='fixed inset-0 bg-gray-500 bg-opacity-75'
         >
           <div className='flex justify-center items-center content-center h-96 w-96 bg-white p-4 rounded-md'>
@@ -182,6 +182,7 @@ export default function Signin() {
               animationData={Animation}
               loop={false}
               autoplay={true}
+              className="lot"
               style={{ width: 400, height: 400, flex:1,justifyContent:'center', alignItems:'center'}}
             />
             
