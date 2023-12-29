@@ -83,35 +83,35 @@ export default function Signin() {
           <div class="sm:col-span-3">
             <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
             <div class="mt-2">
-              <input type="text" onChange={(e)=>{setFirstname(e.target.value);}} name="first-name" id="first-name" maxLength={20} autocomplete="given-name" class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
+              <input type="text" required onChange={(e)=>{setFirstname(e.target.value);}} name="first-name" id="first-name" maxLength={20} autocomplete="given-name" class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
             </div>
           </div>
 
           <div class="sm:col-span-3">
             <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
             <div class="mt-2">
-              <input type="text" onChange={(e)=>{setLastname(e.target.value);}} name="last-name" id="last-name" maxLength={20} autocomplete="family-name" class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
+              <input type="text" required onChange={(e)=>{setLastname(e.target.value);}} name="last-name" id="last-name" maxLength={20} autocomplete="family-name" class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
             </div>
           </div>
 
           <div class="sm:col-span-4">
             <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
             <div class="mt-2">
-              <input id="email" name="email" type="email" onChange={(e)=>{setEmail(e.target.value);}} autocomplete="email" maxLength={30} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
+              <input id="email" required name="email" type="email" onChange={(e)=>{setEmail(e.target.value);}} autocomplete="email" maxLength={30} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
             </div>
           </div>
 
           <div class="sm:col-span-4">
             <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Contact Number</label>
             <div class="mt-2">
-              <input id="email" name="email" type="tel" onChange={(e)=>{setContact(e.target.value);}} autocomplete="email" maxLength={30} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
+              <input id="email" required name="email" type="tel" onChange={(e)=>{setContact(e.target.value);}} autocomplete="email" maxLength={30} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
             </div>
           </div>
 
           <div class="sm:col-span-4">
             <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Date of Birth</label>
             <div class="mt-2">
-              <input id="date" onChange={handleDateOfBirth} name="date" type="date" class="input input-bordered block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
+              <input id="date" required onChange={handleDateOfBirth} name="date" type="date" class="input input-bordered block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
             </div>
           </div>
 
@@ -125,20 +125,20 @@ export default function Signin() {
           <div class="col-span-full">
             <label for="street-address" class="block text-sm font-medium leading-6 text-gray-900">Home Address</label>
             <div class="mt-2">
-              <textarea type="text" name="street-address" onChange={(e)=>{setAddress(e.target.value);}} maxLength={200} id="street-address" autocomplete="street-address" class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
+              <textarea type="text" required name="street-address" onChange={(e)=>{setAddress(e.target.value);}} maxLength={200} id="street-address" autocomplete="street-address" class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
             </div>
           </div>
           <div class="sm:col-span-3">
             <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">User ID</label>
             <div class="mt-2">
-              <input type="text" onChange={(e)=>{setUserName(e.target.value);}} name="first-name" id="first-name" maxLength={20} autocomplete="given-name" class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
+              <input type="text" required onChange={(e)=>{setUserName(e.target.value);}} name="first-name" id="first-name" maxLength={20} autocomplete="given-name" class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
             </div>
           </div>
         </div>
        <div class="sm:col-span-4">
             <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
             <div class="mt-2">
-              <input type={showPassword ? 'text' : 'password'} onChange={(e) => setPassword(e.target.value)} autocomplete="email" maxLength={9} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
+              <input required type={showPassword ? 'text' : 'password'} onChange={(e) => setPassword(e.target.value)} autocomplete="email" maxLength={9} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
               <button
                 type="button"
                 className="ml-2 focus:outline-none"
@@ -151,7 +151,7 @@ export default function Signin() {
           <div class="sm:col-span-4">
             <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Confirm Password</label>
             <div class="mt-2">
-              <input type={showConfirmPassword ? 'text' : 'password'} onChange={(e) => setCpassword(e.target.value)} autocomplete="email" maxLength={9} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
+              <input required type={showConfirmPassword ? 'text' : 'password'} onChange={(e) => setCpassword(e.target.value)} autocomplete="email" maxLength={9} class="block w-full text-center rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-red-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-500 sm:text-sm sm:leading-6"/>
               <button
                 type="button"
                 className="ml-2 focus:outline-none"
