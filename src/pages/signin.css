@@ -1,5 +1,5 @@
 @media screen and (min-device-width:330px) and (max-device-width:900px){
-    Modal{
+    .modal{
         width:150px !important;
     }
 }
