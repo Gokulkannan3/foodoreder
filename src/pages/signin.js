@@ -173,7 +173,7 @@ export default function Signin() {
           isOpen={modalIsOpen}
           contentLabel="Registration Success Modal"
           ariaHideApp={false}
-          className='flex justify-center items-center content-center h-screen w-screen fixed top-0 left-0'
+          className='modal flex justify-center items-center content-center h-screen w-screen fixed top-0 left-0'
           overlayClassName='fixed inset-0 bg-gray-500 bg-opacity-75'
         >
           <div className='flex justify-center items-center content-center h-96 w-96 bg-white p-4 rounded-md'>
