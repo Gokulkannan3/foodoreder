@@ -26,10 +26,10 @@ export default function Anav(){
                 <p>Innum Vai!!!</p>
                 <p>Happy Tummy Ahead!!!</p>
             </div>
-            <div className={`menu w-14 translate-x-80 ml-6 -translate-y-28 ${menuOpen ? 'menu-open' : ''}`} onClick={toggleMenu}>
+            <div className={`menu w-14 translate-x-96 -translate-y-28 ${menuOpen ? 'menu-open' : ''}`} onClick={toggleMenu}>
                 <img src={menu} alt="menu" className="w-8" />
             </div>
-            <div className="bi flex bg-black w-52 items-center justify-end -translate-y-40 -mt-7 translate-x-52 gap-y-4">
+            <div className="bi flex bg-black w-52 items-center justify-end -translate-y-40 -mt-7 translate-x-64 gap-y-4">
                 <ul className={menuOpen ? "open" : ""}>
                     <div className="w-6 translate-x-40 mt-2" onClick={closeMenu}>
                         <img src={close} alt="Close"/>
